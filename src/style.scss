@@ -1,0 +1,104 @@
+$theme-color: rgb(0, 150, 255); 
+$default-font: 'arial'; 
+
+* {
+	box-sizing: content-box;
+}
+
+html, body {
+ 	height: 100%;
+	margin: 0;
+	padding: 0; 
+}
+
+.container {
+	display: flex; 
+	height: 100%; 
+	width: 100%; 
+	justify-content: center;  
+	align-items: center; 
+	background: $theme-color;
+	box-shadow: inset 0px 0px 120px black;
+}
+
+#quote-box {
+	display: inline-block; 
+	position: absolute; 
+	height: auto; 
+	width: 500px; 
+	border-radius: 12px; 
+	opacity: 95%; 
+	background-color: #fffff9;
+}
+
+.textContainer {
+	display: block;
+	height: auto; 
+	min-height: 100px; 
+	margin: 15px; 
+	min-width: 40%;
+		
+	h1 {
+		word-wrap: break-word; 
+		min-width: 1%;
+		margin: 10px; 
+		color: $theme-color
+	}
+	P {
+		margin-right: 20px;
+		width: 100%; 
+		float: right; 
+		color: $theme-color;
+		font-style: italic; 
+		text-align: right; 
+	}
+	svg {
+				fill: $theme-color; 
+				}
+}
+
+.newQuote {
+	border-radius: 5px; 
+	border: 0; 
+	box-shadow: 0px 0px 1px black; 
+	background-color: $theme-color; 
+	color: white; 
+	height: 50px; 
+	width: 65%; 
+	font-size: 30px; 
+	font-family: $default-font; 
+	font-weight: bold; 
+	float: left; 
+	margin-left: 15px;
+	margin-bottom: 15px; 
+	padding: 0px; 
+}
+
+.tweetContainer { 
+	display: flex; 
+	margin-right: 4px;
+	border-radius: 5px; 
+	border: 0; 
+	box-shadow: 0px 0px 1px black; 
+	background-color: $theme-color; 
+	color: white; 
+	height: 50px; 
+	width: 26%; 
+	font-size: 25px; 
+	font-family: $default-font; 
+	font-weight: bold; 
+	justify-content: center;
+	align-items: center; 
+	float: right;
+	margin-right: 15px;
+	margin-bottom: 15px; 
+	svg {
+		fill: white; 
+	}
+}
+
+.newQuote:hover, .tweetContainer:hover {
+	background-color: black; 
+	opacity: 95%; 
+	cursor: pointer; 
+}
